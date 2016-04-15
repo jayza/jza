@@ -1,0 +1,15 @@
+{
+  "name": "jza.io",
+  "version": "0.0.0",
+  "description": "My personal website",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jake Stanich",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "jquery": "~2.2.3",
+    "gulp": "~3.9.1"
+  }
+}
