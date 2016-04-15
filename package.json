@@ -9,7 +9,8 @@
   "author": "Jake Stanich",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "jquery": "~2.2.3",
-    "gulp": "~3.9.1"
+    "gulp": "~3.9.1",
+    "gulp-sass": "^2.2.0",
+    "jquery": "~2.2.3"
   }
 }
