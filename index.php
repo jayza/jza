@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="src/css/style.css">
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 </head>
-<body class="about-me">
+<body>
 
  
 <div id="top-bar">
