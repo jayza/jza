@@ -1,0 +1,61 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin horizontal-center($position) {
+  position: absolute;
+  left: 50%;
+
+  -webkit-transform: translateX($position);
+     -moz-transform: translateX($position);
+      -ms-transform: translateX($position);
+          transform: translateX($position);
+}
+
+@mixin vertical-center($position) {
+  position: absolute;
+  top: 50%;
+
+  -webkit-transform: translateY($position);
+     -moz-transform: translateY($position);
+      -ms-transform: translateY($position);
+          transform: translateY($position);
+}
+
+@mixin transition($rule) {
+  -webkit-transition: $rule;
+     -moz-transition: $rule;
+      -ms-transition: $rule;
+          transition: $rule;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width + 1}) {
+    @content;
+  }
+}

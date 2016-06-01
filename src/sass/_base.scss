@@ -1,0 +1,33 @@
+// General
+$row-width: 1000px;
+
+// Text
+$link-color: #6F5499;
+
+// Media Queries
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+* {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.row {
+  @include clearfix;
+  display: block;
+  max-width: $row-width;
+  margin: 0 auto;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  @include transition(color 0.2s linear);
+
+  &:hover {
+    color: darken($link-color, 15%);
+  }
+}
